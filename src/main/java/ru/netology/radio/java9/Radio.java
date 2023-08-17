@@ -1,4 +1,5 @@
 package ru.netology.radio.java9;
+
 public class Radio {
     private int currentStation;
     private int currentVolume;
@@ -25,7 +26,7 @@ public class Radio {
 
     public void setCurrentStation(int newCurrentStation) {
         if (newCurrentStation > 9) {
-            currentStation = 0;
+            return;
         }
         if (newCurrentStation < 0) {
             currentStation = 9;
