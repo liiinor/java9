@@ -151,7 +151,7 @@ public class RadioTest {
     public void shouldNotSetStationBelowMin() {
         Radio radio = new Radio();
         radio.setCurrentStation(-1);
-        int expected = 9;
+        int expected = 0;
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
