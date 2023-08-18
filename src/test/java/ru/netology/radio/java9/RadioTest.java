@@ -174,5 +174,12 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-
+    @Test
+    public void shouldSetStationIfTheNumberOfStationsIs10() {
+        Radio radio = new Radio();
+        radio.setCurrentStation(6);
+        int expected = 6;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
 }
